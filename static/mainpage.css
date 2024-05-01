@@ -497,7 +497,7 @@
 
 @media screen and (max-width: 480px) {
   .services {
-    height: 320vh;
+    height: 250vh;
   }
 
   .services h1 {
