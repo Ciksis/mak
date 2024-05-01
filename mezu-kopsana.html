@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAK-3</title>
+    <link rel="stylesheet" href="{{url_for('static', path='/mezu-kopsana.css')}}" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', path='/logotypes_165x140.png')}}">
+
+  </head>
+
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><img src="{{url_for('static', path='/logotype_160x125.png')}}" alt="logo"></a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span> <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="/" class="navbar__links">Piekabinamie miglotaji</a>
+        </li>
+        <li class="navbar__item">
+          <a href="mezu-kopsana" class="navbar__links">Mežu kopšana</a>
+        </li>
+        <li class="navbar__item">
+          <a href="contacts" class="navbar__links">Kontakti</a>
+        </li>
+        <li class="navbar__btn"><a href="login" class="button">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+<!-- Other sections will follow -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Ilgtspējīgas mežu izaugsmes un kopšanas nodrošināšana.</h1>
+        <p>Latvija ir bagāta ar mežiem - bagātība, kas prasa rūpīgu apsaimniekošanu, lai optimizētu gan vides, gan finansiālo atdevi. 
+            Saglabājot mūsu mežus labākajā stāvoklī, ne tikai tiek atbalstīta bioloģiskā daudzveidība, bet arī palielināti ekonomiskie ieguvumi. 
+           Sazinoties ar mums, mēs varam apspriest visizdevīgākās cenas un darba plānus, kas pielāgoti jūsu vajadzībām.
+        </p>
+        <a href="contacts"><button>Kontakti</button></a>
+    </div>
+  </section>
+
+
+  <!-- Piedāvājums mūsu -->
+  <section class="services">
+    <h2>Mēs piedāvājam</h2>
+    <div class="service">
+        <div class="service-text">
+            <h3>Mums svarīgi, lai Jūs gūtu sev vēlamo maksimāli labāko rezultātu no sava meža.</h3>
+            <p>Sniedzam kvalificēta speciālista meža audzēšanas un kopšanas konsultācijas:</p>
+        </div>
+        <div class="service-image">
+            <img src="{{url_for('static', path='/trimmeris.jpg')}}" alt="Species Selection">
+        </div>
+    </div>
+    <div class="service" style="flex-direction: row-reverse;">
+        <div class="service-text">
+            <h3>Stādīšanai piemērotākās sugas izvēle konkrētajā vietā,</h3>
+            <p>Kopšanas nepieciešamības izvērtēšana,<br>
+              Kopšanas intensitātes noteikšana,<br>
+              Kopšanas plāna izveide.</p>
+        </div>
+        <div class="service-image">
+            <img src="{{url_for('static', path='/stada.jpg')}}" alt="Forest Management">
+        </div>
+    </div>
+</section>
+
+
+  <!-- Footer Section -->
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>E-pasts   <i class="fa fa-envelope" aria-hidden="true"></i></h2>
+          <a href="mailto:atskaites1@inbox.lv">atskaites1@inbox.lv</a>
+        </div>
+        <div class="footer__link--items">
+          <h2>Sazinies   <i class="fa fa-phone" aria-hidden="true"></i></h2>
+          <span itemprop="telephone"><a href="tel:+37129105547">+371 29105547</a></span>
+        </div>
+      </div>
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>Atrodi mūs   <i class="fa fa-map-marker" aria-hidden="true"></i></h2>
+          <a>"Zakeri", Viesītes pag., <br>Jēkabpils nov., LV-5237</a>
+        </div>
+        <div class="footer__link--items">
+          <h2>Social Media</h2>
+          <a href="https://www.instagram.com/boguslav_group_agro/">Instagram</a> <a href="https://www.facebook.com/BoguslavGroupAgro/">Facebook</a>
+          <a href="https://www.youtube.com/@boguslavgroupagro">Youtube</a> <a href="https://www.linkedin.com/company/boguslav-group-agro/">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <div class="footer__logo">
+          <a href="/" id="footer__logo"><img src="{{url_for('static', path='/logotype_160x125.png')}}" alt="logo"></a>
+        </div>
+        <!-- <p class="website__rights">© NEXT 2020. All rights reserved</p> -->
+        <div class="social__icons">
+          <a
+            class="social__icon--link"
+            href="https://www.facebook.com/BoguslavGroupAgro/"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href="https://www.instagram.com/boguslav_group_agro/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href="https://www.youtube.com/@boguslavgroupagro"
+            target="_blank"
+            aria-label="Youtube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href="https://www.linkedin.com/company/boguslav-group-agro/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="{{url_for('static', path='/testing.js')}}"></script>
+
+</body>

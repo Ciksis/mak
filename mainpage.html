@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAK-3</title>
+    <link rel="stylesheet" href="{{url_for('static', path='/mainpage.css')}}" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', path='/logotypes_165x140.png')}}">
+
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"><img src="{{url_for('static', path='/logotype_160x125.png')}}" alt="logo"></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Piekabinamie miglotaji</a>
+          </li>
+          <li class="navbar__item">
+            <a href="mezu-kopsana" class="navbar__links">Mežu kopšana</a>
+          </li>
+          <li class="navbar__item">
+            <a href="contacts" class="navbar__links">Kontakti</a>
+          </li>
+          <li class="navbar__btn"><a href="login" class="button">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>PIEKABINĀMIE SMIDZINĀTĀJI</h1>
+          <h2>AR GPS VADĪBU   (15-32m)</h2>
+          <!-- <p>See what makes up different.</p>
+          <button class="main__btn"><a href="#">Get Started</a></button> -->
+        <!-- </div>
+        <div class="main__img--container">
+          <img id="main__img" src="../images/22.jpg" />
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+      <div class="services__container">
+        <div class="services__card"><a href="ODESSEY">
+          <img id="services__img" src="{{url_for('static', path='/ODESSEY-2500-18.jpg')}}" alt="ODESSEY bilde"/>
+          <h2 style="color: rgb(255, 238, 2);">ODESSEY</h2>
+          <p>Mazākais miglotājs piedāvājumā. <br>
+          Tvertnes tilpums 2000/2500 Litri un<br> stieņa garums 15/18 metri.</p>
+          <button id="kronos">Izlasīt vairāk</button>
+        </a></div>
+        <div class="services__card"><a href="/KRONOS">
+          <img id="services__img" src="{{url_for('static', path='/KRONOS.jpg')}}" alt="ODESSEY bilde"/>
+          <h2 style="color: rgb(255, 238, 2);">KRONOS</h2>
+          <p>Dauzd komplektētāks un lielāks ODESSEY smidzinātājs<br>
+            Tvertnes tilpums 2500/3000 Litri un<br> stieņa garums 18/21 metri.</p>
+          <button id="kronos">Izlasīt vairāk</button>
+          
+        </a></div>
+        <div class="services__card"><a href="/TITAN-PRO">
+          <img id="services__img" src="{{url_for('static', path='/WhatsApp Image 2023-04-17 at 15.21.53 (2).jpeg')}}" alt="ODESSEY bilde"/>
+          <h2 style="color: blue;">TITAN</h2>
+          <p>Miglotājs ar diviem modeļiem (PRO un parastais) <br>
+            Tvertnes tilpums 3200 Litri un<br> stieņa garums 24/28 metri.</p>
+          <button id="atlants">Izlasīt vairāk</button>
+        </a></div>
+        <div class="services__card"><a href="/ATLANT">
+          <img id="services__img" src="{{url_for('static', path='/Atlant-3200.jpg')}}" alt="ODESSEY bilde"/>
+          <h2 style="color: blue;">ATLANT</h2>
+          <p>Lielākais miglotājs piedāvājumā. <br>
+          Tvertnes tilpums 3200/4200 Litri un<br> stieņa garums 24-32 metri.</p>
+          <button id="atlants">Izlasīt vairāk</button>
+        </a></div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>E-pasts   <i class="fa fa-envelope" aria-hidden="true"></i></h2>
+            <a href="mailto:atskaites1@inbox.lv">atskaites1@inbox.lv</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Sazinies   <i class="fa fa-phone" aria-hidden="true"></i></h2>
+            <span itemprop="telephone"><a href="tel:+37129105547">+371 29105547</a></span>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Atrodi mūs   <i class="fa fa-map-marker" aria-hidden="true"></i></h2>
+            <a>"Zakeri", Viesītes pag., <br>Jēkabpils nov., LV-5237</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="https://www.instagram.com/boguslav_group_agro/">Instagram</a> <a href="https://www.facebook.com/BoguslavGroupAgro/">Facebook</a>
+            <a href="https://www.youtube.com/@boguslavgroupagro">Youtube</a> <a href="https://www.linkedin.com/company/boguslav-group-agro/">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo"><img src="{{url_for('static', path='/logotype_160x125.png')}}" alt="logo"></a>
+          </div>
+          <!-- <p class="website__rights">© NEXT 2020. All rights reserved</p> -->
+          <div class="social__icons">
+            <a
+              class="social__icon--link"
+              href="https://www.facebook.com/BoguslavGroupAgro/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="https://www.instagram.com/boguslav_group_agro/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="https://www.youtube.com/@boguslavgroupagro"
+              target="_blank"
+              aria-label="Youtube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="https://www.linkedin.com/company/boguslav-group-agro/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div> 
+    <script src="{{url_for('static', path='/testing.js')}}"></script>
+  </body>
+</html>

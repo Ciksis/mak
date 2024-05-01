@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAK-3</title>
+    <link rel="stylesheet" href="{{url_for('static', path='/ATLANT.css')}}" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', path='/logotypes_165x140.png')}}">
+
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><img src="{{url_for('static', path='/logotype_160x125.png')}}" alt="logo"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="/" class="navbar__links">Piekabinamie miglotaji</a>
+            </li>
+            <li class="navbar__item">
+                <a href="mezu-kopsana" class="navbar__links">Mežu kopšana</a>
+            </li>
+            <li class="navbar__item">
+                <a href="contacts" class="navbar__links">Kontakti</a>
+            </li>
+            <li class="navbar__btn"><a href="login" class="button">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+      <!-- Vidiks backgroundam un labakai paredzamibai -->
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="{{url_for('static', path='/ATLANT_izrade.mp4')}}" type="video/mp4">
+        </video>
+    </div>
+
+<!-- Main teksts un bildes-->
+    <div class="wrapper">
+        <div class="text-box">
+            <h2>ATLANT</h2>
+            <div class="papildinfo">
+                <h3>Tvertnes tilpums</h3>
+                <img class="papildinfo-bilde" src="{{url_for('static', path='/Atlant-3200.jpg')}}" alt="pats atlants">
+                <p>Smidzinātāja standarta aprīkojumā pieejama 3200 L, kā arī 4200 L šķidruma ietilpīga tvertne.</p>
+            </div>
+
+            <div class="papildinfo">
+                <h3>Smidzinātāja stienis</h3>
+                <p>Smidzinātāja stieņa pieejamie garumi ir 24/28/32 m. Profila caurules ir fermas konstrukcijas elementi, kuru materiāls ir īpašs alumīnija sakausējums. 
+                    Šis dizains to padara ļoti izturīgu pret koroziju, un padara to vieglāku. Šī iemesla dēļ tiek pagarināts smidzinātāja kalpošanas laiks.</p>
+            </div>
+
+            <div class="papildinfo">
+                <h3>Uzticams un izturīgs rāmis</h3>
+                <p>Aprīkojuma rāmis no 09G2S un S35J tērauda. rāmja konstrukcija nodrošina ērtu piekļuvi visām smidzinātāja sistēmām. ir liela darba platforma ar žogu, lai piekļūtu tvertnes uzpildes atverei.</p>
+            </div>
+
+            <div class="papildinfo">
+                <h3>Stabilizācijas mehānisms</h3>
+                <img class="papildinfo-bilde" src="{{url_for('static', path='/ATLANT-stabilizacijas-mehanisms.jpeg')}}" alt="stabilizacijas stienis">
+                <p>Unikālais dubultās sijas stabilizācijas mehānnisms ļauj strādāt, nebloķējot sijas slīpuma stabilizāciju ar hidraulisko cilindru palīdzību. 
+                    Nevienmērīga lauka izraisītu svārstību gadījumā augšējā svārsta aukla šūpojas prom, un tajā pašā laikā, pateicoties otrā svārsta darbībai, sija paliek horizontālā stāvoklī.</p>
+            </div>
+
+            <div class="papildinfo">
+                <h3>Hidrauliskā balstiekārta</h3>
+                <img class="papildinfo-bilde" src="{{url_for('static', path='/bremzes2.jpeg')}}" alt="stabilizacijas stienis">
+                <p>
+                    Smidzinātāji ir aprīkoti ar vērpes asi, lai samazinātu zudumus uz lauka līnēm un atkārtotu traktora riteņu attēlu. 
+                    hidropneimatiskā šasijas balstiekārta nodrošina vienmērīgu braukšanu un samazina lauka nelīdzenumu ietekmi uz smidzinātāja veiktspēju. Piekare ir aprīkota ar diviem hidrauliksajiem cilindriem un slāpekļa akumulatoriem, tāpēc piekare nevainojami darbojas gan ar pilnu, gan tukšu tvertni.
+                    Dinamiskās slodzes uz smidzinātāja rāmi un izlici uzņem šasija un stieņu piekare (paralēlogramma). Tas ļauj iekārtai vienmērīgi apstrādāt labību lielā ātrumā.
+                    Smidzināšanas stieņi paliek horizontāli pat tad, kad apstrādājot lauku rodas trieciens. Tās pozīcijas stabilitāti nodrošina svārsta mehānisms un hidromehāniskā sistēma, kas slāpē vertikālās vibrācijas.
+                </p>
+            </div>
+
+            <div class="papildinfo">
+                <h3>Bremžu sistēma</h3>
+                <img class="papildinfo-bilde" src="{{url_for('static', path='/bremze-ritenim.jpeg')}}" alt="stabilizacijas stienis">
+      
+                <p>Smidzinātāja bremžu sistēma ir pneimatiska, bet šasijas balstiekārta ir hidropneimatiska. Tie ļauj mašīnai vienmērīgi un droši pārvietoties pa lauku miglošanas laikā un uz vispārējiem ceļiem.</p>
+            </div>
+
+            <div class="papildinfo">
+                <h3>Pastāvīga darba šķidruma koncentrācija un tvertnes skalošana</h3>
+                <img class="papildinfo-bilde" src="{{url_for('static', path='/maisitajs.jpeg')}}" alt="stabilizacijas stienis">
+      
+                <p>Lai kontrolētu smidzinātāja galvenās funkcijas (atšķaidīšanas sagatavošana, darba šķidruma padeve, tvertnes skalošana, galvenās tvertnes uzpilde, sistēmas skalošana), vadības panelis atrodas smidzinātāja priekšpusē. Paneļa izmantošana samazina kļūdas un palielina operatora komfortu.<br>
+                    <br>Smidzinātāja skalošanas sistēma izskalo sūkni, smidzināšanas sistēmu, un galveno tvertni ar tīru ūdeni. Pateicoties jaudīgajiem rotējošajiem sprauslām, tvertnes iekšējās sienas tiek izskalotas efektīvāk.</p>
+            </div>
+
+            <div class="papildinfo">
+                <h3>Bravo 400S LT</h3>
+                <p>7 sekcijas ar intigrētu GPS navigatoru (AGRA Itālija) ir paredzēts interētai smidzinātāja vadībai ar funkciju automātiski izslēgt strēles sakcijas, kas atrodas virs jau apstrādātās platības,, lai novērstu atkārtotu apstrādi.</p>
+    
+                <h3>Bravo 400S + SELTRON</h3>
+                <p>Ar funkciju automātiski izslēgt katru sprauslu atsevišķi, kas atrodas virs jau apstrādātās zonas, lai izvairītos no atkārtotas apsrtādes.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Tablula ar cenu-->
+
+    <div class="grid-wrapper">
+        <div class="cena">
+            <h3>Miglotāja cena sākot no: </h3>
+        </div>
+        <div class="cenacipari">
+            <h3>44000-</h3>
+        </div>
+        <div class="grid-container">
+            <div class="nosaukusms">Tehniskais Raksturojums</div>
+            <div class="grid-item"></div>
+            <div class="grid-item">Tvertnes tilpums 3200 L</div>
+            <div class="grid-item">Tvertnes tilpums 4200 L</div>
+            <div class="grid-item">Garums</div>  
+            <div class="grid-item"> 7500 mm</div>
+            <div class="grid-item">7500 mm</div>
+            <div class="grid-item">Platums</div>  
+            <div class="grid-item">24/28/32 m</div>
+            <div class="grid-item">24/28/32 m</div>
+            <div class="grid-item">Augstums</div>
+            <div class="grid-item">3000 mm</div>  
+            <div class="grid-item">3500 mm</div>
+            <div class="grid-item">Tilpums</div>
+            <div class="grid-item">3200 L</div>
+            <div class="grid-item">4200 L</div>
+            <div class="grid-item">Masa (sausa)</div>
+            <div class="grid-item">2700 kg</div>
+            <div class="grid-item">4200 kg</div>
+            <div class="grid-item">Masa (pilna)</div>  
+            <div class="grid-item">5900 kg</div>
+            <div class="grid-item">8400 kg</div>
+            <div class="grid-item">Klīrenss</div>
+            <div class="grid-item">700 mm</div> 
+            <div class="grid-item">700 mm</div> 
+        </div>
+    </div>
+
+
+
+        <!-- Footer Section -->
+        <div class="footer__container">
+            <div class="footer__links">
+              <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                  <h2>E-pasts   <i class="fa fa-envelope" aria-hidden="true"></i></h2>
+                  <a href="mailto:atskaites1@inbox.lv">atskaites1@inbox.lv</a>
+                </div>
+                <div class="footer__link--items">
+                  <h2>Sazinies   <i class="fa fa-phone" aria-hidden="true"></i></h2>
+                  <span itemprop="telephone"><a href="tel:+37129105547">+371 29105547</a></span>
+                </div>
+              </div>
+              <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                  <h2>Atrodi mūs   <i class="fa fa-map-marker" aria-hidden="true"></i></h2>
+                  <a>"Zakeri", Viesītes pag., <br>Jēkabpils nov., LV-5237</a>
+                </div>
+                <div class="footer__link--items">
+                  <h2>Social Media</h2>
+                  <a href="https://www.instagram.com/boguslav_group_agro/">Instagram</a> <a href="https://www.facebook.com/BoguslavGroupAgro/">Facebook</a>
+                  <a href="https://www.youtube.com/@boguslavgroupagro">Youtube</a> <a href="https://www.linkedin.com/company/boguslav-group-agro/">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+            
+            <section class="social__media">
+              <div class="social__media--wrap">
+                <div class="footer__logo">
+                  <a href="/" id="footer__logo"><img src="{{url_for('static', path='/logotype_160x125.png')}}" alt="logo"></a>
+                </div>
+                <!-- <p class="website__rights">© NEXT 2020. All rights reserved</p> -->
+                <div class="social__icons">
+                  <a
+                    class="social__icon--link"
+                    href="https://www.facebook.com/BoguslavGroupAgro/"
+                    target="_blank"
+                    aria-label="Facebook"
+                  >
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a
+                    class="social__icon--link"
+                    href="https://www.instagram.com/boguslav_group_agro/"
+                    target="_blank"
+                    aria-label="Instagram"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    class="social__icon--link"
+                    href="https://www.youtube.com/@boguslavgroupagro"
+                    target="_blank"
+                    aria-label="Youtube"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a
+                    class="social__icon--link"
+                    href="https://www.linkedin.com/company/boguslav-group-agro/"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+    <script src="{{url_for('static', path='/testing.js')}}"></script>
+</body>
+</html>
