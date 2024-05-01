@@ -2,7 +2,7 @@ from fastapi import FastAPI, Form, Request
 from fastapi.responses import FileResponse, HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from os import getenv
+import uvicorn
 
 app = FastAPI()
 # app.mount()
@@ -39,3 +39,6 @@ async def izvadītLapu(lapa_:str, request: Request):
 	# with open(f'templates/{lapa_}.html', 'w', encoding='utf-8') as f:
 	# 	f.write(fails.replace('\r\n', '\n'))
 	return templates.TemplateResponse(f'{lapa_}.html', {"request": request})
+
+if __name__ == "__main__":
+    uvicorn.run("index:app", host="0.0.0.0", port=8000, reload=True)
