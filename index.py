@@ -41,4 +41,4 @@ async def izvadītLapu(lapa_:str, request: Request):
 	return templates.TemplateResponse(f'{lapa_}.html', {"request": request})
 
 if __name__ == "__main__":
-    uvicorn.run("index:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("index:app", host="0.0.0.0", port=80, reload=True)
