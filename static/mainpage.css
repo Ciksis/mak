@@ -302,6 +302,9 @@
   .main__content h2 {
     font-size: 1.8rem;
   }
+  .main__container {
+  height: 20vh;
+  }
 
 }
 @media screen and (max-width: 480px) {
@@ -313,6 +316,9 @@
   .main__content h2 {
     font-size: 1.5rem;
   }
+  .main__container {
+  height: 20vh;
+  }
 
 }
 
@@ -322,7 +328,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 170vh;
+  height: 135vh;
 }
 
 /* .services h1 {
@@ -360,7 +366,7 @@
 
 .services__card {
   margin: 2.5% 5% 2.5% 5%;
-  height: 525px;
+  height: 550px;
   width: 57vh;
   border-radius: 5%;
   background-image: linear-gradient(
@@ -392,6 +398,7 @@
   position: absolute;
   top: 315px;
   left: 30px;
+  margin-top: 2%;
 }
 
 .services__card p {
@@ -399,6 +406,8 @@
   top: 360px;
   left: 30px;
   color: #EEEEEE;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .services__card button {
@@ -429,18 +438,30 @@
   transition: 0.2s ease-in;
   cursor: pointer;
 }
+@media screen and (max-width: 1380px) {
+  .services__card {
+    margin: 1.5% 3% 5% 3%;
+    width: 45vh;
+  } 
+  .services__card button {
+  top: 470px;
+  }
+}
 @media screen and (max-width: 1100px) {
   .services__card {
     margin: 2.5% 5% 2.5% 5%;
-    height: 525px;
-    width: 47vh;
+    height: 550px;
+    width: 50vh;
     border-radius: 5%;
   } 
+  .services {
+    height: 250vh;
+  }
 }
 
 @media screen and (max-width: 960px) {
   .services {
-    height: 325vh;
+    height: 250vh;
   }
 
   .services__container {
