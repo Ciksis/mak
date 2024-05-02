@@ -322,13 +322,15 @@
 
 }
 
+
+
 /* Services Section */
 .services {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 135vh;
+  height: 165vh;
 }
 
 /* .services h1 {
@@ -441,7 +443,7 @@
 @media screen and (max-width: 1380px) {
   .services__card {
     margin: 1.5% 3% 5% 3%;
-    width: 45vh;
+    width: 60vh;
   } 
   .services__card button {
   top: 470px;
@@ -455,13 +457,13 @@
     border-radius: 5%;
   } 
   .services {
-    height: 250vh;
+    height: 165vh;
   }
 }
 
 @media screen and (max-width: 960px) {
   .services {
-    height: 250vh;
+    height: 320vh;
   }
 
   .services__container {
