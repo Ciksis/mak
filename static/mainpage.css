@@ -363,7 +363,7 @@
   width: 100%;
   text-align: center;
   border-radius: 5%;
-  max-height: 58%;
+  max-height: 55%;
 }
 
 .services__card {
@@ -420,7 +420,7 @@
   border-radius: 4px;
   background: rgb(255, 238, 2);
   position: absolute;
-  top: 440px;
+  top: 470px;
   left: 30px;
   font-size: 1rem;
 }
@@ -441,74 +441,101 @@
   cursor: pointer;
 }
 @media screen and (max-width: 1380px) {
+  .services {
+    height: 133vh;
+  }
   .services__card {
     margin: 1.5% 3% 5% 3%;
-    width: 60vh;
+    width: 50vh;
   } 
+  .services h1 {
+    font-size: 1.2rem;
+  }
+  .services__card h2 {
+    top: 320px;
+  }
+  .services__card p {
+    top: 380px;
+  }
   .services__card button {
-  top: 470px;
+    top: 470px;
   }
 }
 @media screen and (max-width: 1100px) {
-  .services__card {
-    margin: 2.5% 5% 2.5% 5%;
-    height: 550px;
-    width: 50vh;
-    border-radius: 5%;
-  } 
   .services {
-    height: 165vh;
+    height: 250vh;
+  }
+  .services__card {
+    margin: 1.5% 3% 5% 3%;
+    width: 55vh;
+  } 
+  .services h1 {
+    font-size: 1.2rem;
+  }
+  .services__card h2 {
+    top: 320px;
+  }
+  .services__card p {
+    top: 380px;
+  }
+  .services__card button {
+    top: 470px;
   }
 }
 
 @media screen and (max-width: 960px) {
   .services {
-    height: 320vh;
+    height: 230vh;
   }
-
   .services__container {
     display: grid;
     grid-template-columns: auto;
-    /* align-items: center;
-    justify-self: center;
-    width: 100%;
-      */
   }
-
   .services__card {
-    margin: 5%;
+    margin: 3%;
     height: 525px;
     width: 90%;
-    /* border-radius: 5%;
-    
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-      );
-    background-size: cover;
-    position: relative;
-    color: #fff; */
   }
-
   .services h1 {
     font-size: 2rem;
     margin-top: 12rem;
+  }
+  .services__card h2 {
+    top: 300px;
+  }
+  .services__card p {
+    top: 350px;
+  }
+  .services__card button {
+    top: 460px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .services {
-    height: 250vh;
+    height: 200vh;
   }
-
   .services h1 {
     font-size: 1.2rem;
   }
-
   .services__card {
+    height: 400px;
     width: 300px;
   }
+  .services__card h2 {
+    top: 215px;
+  }
+  #services__img {
+    max-height: 50%;
+  }
+  .services__card button {
+    top: 375px;
+    left: 25px;
+  }
+  .services__card p {
+    top: 257px;
+  }
+  
 }
 
 /* Footer CSS */
