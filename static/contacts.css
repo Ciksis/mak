@@ -319,21 +319,6 @@
   }
   .mapbox{
     width: 60%;
-  }
-  .mapbox iframe{
-    width: 300px;
-    height: 225px;
-  }
-}
-@media screen and (max-width: 760px) {
-  .contact{
-    padding: 50px 25px;
-  }
-  .container .contactInfo{
-    width: 40%;
-  }
-  .mapbox{
-    width: 60%;
     
   }
   .mapbox iframe{
@@ -351,16 +336,19 @@
   .contact{
     padding: 50px 25px;
   }
-  .container .contactInfo{
-    width: 40%;
+  .container{
+    display: grid;
+    grid-template-columns: auto;
   }
   .mapbox{
-    width: 60%;
-    flex-wrap: wrap;
+    width: 80%;
+  }
+  .container .contactInfo{
+  width: 80%;
   }
   .mapbox iframe{
-    width: 300px;
-    height: 225px;
+    width: 400px;
+    height: 300px;
   }
   .contact .content h2 {
     font-size: 2rem;
