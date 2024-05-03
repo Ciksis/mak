@@ -195,7 +195,7 @@
 
 /* Main Content CSS */
 .main {
-  background: linear-gradient(to bottom, rgb(190, 207, 121) 0%, #EEEEEE 20%, rgb(190, 207, 121) 70%, #EEEEEE 90%, rgb(190, 207, 121) 100%);
+  background: linear-gradient(to bottom, rgb(190, 207, 121) 0%, #EEEEEE 33%, rgb(190, 207, 121) 70%, #EEEEEE 90%, rgb(190, 207, 121) 100%);
 }
 
 .main__container {
@@ -218,8 +218,8 @@
 .main__content h1 {
   text-align: center;
   font-size: 4rem;
-  background-color: #e6ff77;
-  background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb, #553c9a);
+  background-color: #fff;
+  /* background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb, #553c9a); */
   color: transparent;
   background-size: 100%;
   -webkit-background-clip: text;
@@ -233,8 +233,8 @@
   text-align: center;
   font-size: 4rem;
   margin-top: 10px;
-  background-color: #ff8177;
-  background-image: conic-gradient(#553c9a, rgb(149, 0, 255), #00c2cb, #553c9a);
+  background-color: #fff;
+  /* background-image: conic-gradient(#553c9a, rgb(149, 0, 255), #00c2cb, #553c9a); */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
