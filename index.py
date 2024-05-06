@@ -38,9 +38,9 @@ async def root7(request: Request):
 	return templates.TemplateResponse('login.html', {"request": request})
 
 
-@app.get("/Lapas/favicon.ico", include_in_schema=False)
-async def favicon():
-	return FileResponse('Lapas/favicon.icon')
+# @app.get("/static/favicon.ico", include_in_schema=False)
+# async def favicon():
+# 	return FileResponse('static/favicon.icon')
 @app.get('/static/{attels}')
 async def iegūtAttēlu(attels: str):
 	# return {'Saņemts': attels}

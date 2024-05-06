@@ -330,7 +330,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 165vh;
+  height: 1225vh;
 }
 
 /* .services h1 {
@@ -442,7 +442,7 @@
 }
 @media screen and (max-width: 1380px) {
   .services {
-    height: 133vh;
+    height: 1225px;
   }
   .services__card {
     margin: 1.5% 3% 5% 3%;
@@ -463,10 +463,10 @@
 }
 @media screen and (max-width: 1100px) {
   .services {
-    height: 250vh;
+    height: 2375px;
   }
   .services__card {
-    margin: 1.5% 3% 5% 3%;
+    margin: 1.5% 3% 3% 3%;
     width: 55vh;
   } 
   .services h1 {
@@ -485,7 +485,7 @@
 
 @media screen and (max-width: 960px) {
   .services {
-    height: 230vh;
+    height: 2250px;
   }
   .services__container {
     display: grid;
@@ -513,7 +513,7 @@
 
 @media screen and (max-width: 480px) {
   .services {
-    height: 200vh;
+    height: 1700px;
   }
   .services h1 {
     font-size: 1.2rem;
