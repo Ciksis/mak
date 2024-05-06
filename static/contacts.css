@@ -344,9 +344,13 @@
   }
   .mapbox{
     width: 80%;
+    align-items: center;
+    justify-content: center;
   }
   .container .contactInfo{
-  width: 80%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
   }
   .mapbox iframe{
     width: 300px;
