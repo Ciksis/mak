@@ -523,17 +523,17 @@
     width: 300px;
   }
   .services__card h2 {
-    top: 215px;
+    top: 200px;
   }
   #services__img {
     max-height: 50%;
   }
   .services__card button {
-    top: 375px;
+    top: 350px;
     left: 25px;
   }
   .services__card p {
-    top: 257px;
+    top: 240px;
   }
   
 }
