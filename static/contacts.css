@@ -5,12 +5,6 @@
   font-family: 'Kumbh Sans', sans-serif;
 }
 
-
-
-
-
-
-
 .navbar {
   background: rgb(190, 207, 121);
   height: 100px;
@@ -325,10 +319,42 @@
   }
   .mapbox{
     width: 60%;
+    
   }
   .mapbox iframe{
     width: 300px;
     height: 225px;
+  }
+  .contact .content h2 {
+    font-size: 3rem;
+  }
+  .contact .content p {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  .contact{
+    padding: 50px 25px;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .mapbox{
+    width: 80%;
+  }
+  .container .contactInfo{
+  width: 80%;
+  }
+  .mapbox iframe{
+    width: 400px;
+    height: 300px;
+  }
+  .contact .content h2 {
+    font-size: 2rem;
+  }
+  .contact .content p {
+    font-size: 1.25rem;
   }
 }
 
