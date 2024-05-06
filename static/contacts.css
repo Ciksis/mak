@@ -334,11 +334,13 @@
 }
 @media screen and (max-width: 660px) {
   .contact{
-    padding: 50px 25px;
+    padding: 20px 12.5px;
   }
   .container{
     display: grid;
     grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
   }
   .mapbox{
     width: 80%;
@@ -347,14 +349,14 @@
   width: 80%;
   }
   .mapbox iframe{
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
   }
   .contact .content h2 {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   .contact .content p {
-    font-size: 1.25rem;
+    font-size: 0.9rem;
   }
 }
 
